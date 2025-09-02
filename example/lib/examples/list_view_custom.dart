@@ -53,18 +53,9 @@ class _ListViewExample2PageState extends State<ListViewExample2Page> {
   Widget _skeletonView() => SkeletonListView(
         item: SkeletonListTile(
           verticalSpacing: 12,
-          leadingStyle: SkeletonAvatarStyle(
-              width: 64, height: 64, shape: BoxShape.circle),
-          titleStyle: SkeletonLineStyle(
-              height: 16,
-              minLength: 200,
-              randomLength: true,
-              borderRadius: BorderRadius.circular(12)),
-          subtitleStyle: SkeletonLineStyle(
-              height: 12,
-              maxLength: 200,
-              randomLength: true,
-              borderRadius: BorderRadius.circular(12)),
+          leadingStyle: SkeletonAvatarStyle(width: 64, height: 64, shape: BoxShape.circle),
+          titleStyle: SkeletonLineStyle(height: 16, minLength: 200, randomLength: true, borderRadius: BorderRadius.circular(12)),
+          subtitleStyle: SkeletonLineStyle(height: 12, maxLength: 200, randomLength: true, borderRadius: BorderRadius.circular(12)),
           hasSubtitle: true,
         ),
       );
@@ -80,8 +71,7 @@ class _ListViewExample2PageState extends State<ListViewExample2Page> {
                 width: 64,
                 height: 64,
                 decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/placeholder.png")),
+                  image: DecorationImage(image: AssetImage("assets/placeholder.png")),
                   shape: BoxShape.circle,
                 ),
               ),
@@ -94,10 +84,7 @@ class _ListViewExample2PageState extends State<ListViewExample2Page> {
                 children: [
                   Text(
                     randomText(),
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline6!
-                        .copyWith(fontSize: 16),
+                    style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 16),
                     maxLines: 1,
                   ),
                   SizedBox(
