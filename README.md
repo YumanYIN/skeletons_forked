@@ -1,5 +1,11 @@
 # Skeletons
 
+Forked from [badjio/skeletons/](https://github.com/badjio/skeletons/)
+
+Changed backgroundColor to colorScheme.surface. Changed headline6 to titleLarge.
+
+------
+
 A Flutter package for building custom skeleton widgets to mimic the page's layout while loading.
 
 ## Examples
